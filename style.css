@@ -31,14 +31,28 @@ p{
 main{
   margin-top: 30px;
 }
+
+.bag{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+  font-size: 40px;
+
+  cursor: pointer;
+}
+
 .itens{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  height: 100%;
 }
 
 .details-itens{
+  height: 45vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,14 +60,46 @@ main{
 }
 
 img{
+  border-radius: 8px;
+  
+  height: 100%;
+  width: 40%;
+}
+
+.container-quantidade{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   width: 50%;
+  height: 100%;
+}
+
+.add-rem{
+  width: 100%;
+
+  gap: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button{
-  background-color: transparent;
+  cursor: pointer;
+
   border: double crimson 7px;
+  background-color: transparent;
+
   height: 10vh;
-  width: 30%;
+  width: 25%;
+
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button:hover{
+  border: double rgb(253, 93, 125) 7px;
 }
 .cash{
   font-size: 30px;
